@@ -1,0 +1,35 @@
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    background-color: midnightblue;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.first, .second{
+    background-color: lightskyblue;
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first{
+    align-items: center;
+    justify-content: center;
+}
+
+.pic {
+    border-radius: 50%;
+}
