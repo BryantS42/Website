@@ -1,27 +1,23 @@
-:root{
-    --mainColor:skyblue;
-    --secondaryColor:blue; 
-    --borderColor:skyblue;
-    --mainText:black;
-    --secondaryText: midnightblue;
-    --previewBg:rgb(251,249,243,0.8)
-}
 html, body{
     padding: 0;
     margin: 0;
     height: 100%;
 }
 h1,h2,h3,h4,h5,h6,strong{
-    color: var(--mainText);
+    color: black;
 }
 
 p, li, span, label, input, textarea{
-    color: var(--mainText);
+    color: black;
+}
+
+h3{
+    font-size: 2em;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: #abe9cd;
 }
 
 ul{
@@ -38,7 +34,21 @@ body{
     margin-top: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid var(--borderColor);
+    border: 2px solid gray;
+}
+
+#linked{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#github{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .s1{
@@ -47,7 +57,7 @@ body{
 
 .s2{
     background-color: honeydew;
-    border-bottom: 1px solid var(--borderColor);
+    border-bottom: 1px solid skyblue;
     overflow: auto;
 }
 
@@ -60,7 +70,7 @@ body{
 .second-container{
     height: 100%;
     width: 100%;
-    background-color: lightsalmon;
+    background-color: salmon;
     border: 1px solid gray;
     
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -130,28 +140,35 @@ body{
 #message{
     width: 300px;
     border: 1.5px solid #17a2b8;
-    background-color: var(--previewBg);
+    background-color: rgb(251,249,243,0.8);
     padding: 15px;
 }
 
 .about-wrap{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: 3em 40em;
+    grid-template-rows: 3em 25em;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: 25px;
 }
 
 .about-me{
     display: grid;
     align-content: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 .social-links{
     display: grid;
     align-content: center;
     text-align: center;
+    margin-top: 100px;
+}
+
+.social-text{
+    font-size: 2em;
 }
 
 .resume-container{
@@ -174,6 +191,8 @@ body{
     display: grid;
     text-align: center;
     justify-content: center;
+    color: blue;
+    text-decoration: underline;
 }
 
 #contact-form{
