@@ -1,0 +1,223 @@
+:root{
+    --mainColor:skyblue;
+    --secondaryColor:blue; 
+    --borderColor:skyblue;
+    --mainText:black;
+    --secondaryText: midnightblue;
+    --previewBg:rgb(251,249,243,0.8)
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6,strong{
+    color: var(--mainText);
+}
+
+p, li, span, label, input, textarea{
+    color: var(--mainText);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}
+
+.pic{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--borderColor);
+}
+
+.s1{
+    border-bottom:1px solid black;
+}
+
+.s2{
+    background-color: honeydew;
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.second-container{
+    height: 100%;
+    width: 100%;
+    background-color: lightsalmon;
+    border: 1px solid gray;
+    
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75); 
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 40em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+    
+}
+
+.nav-wrapper{
+    background-color: #756213;
+    background-image: linear-gradient(315deg, #756213 0%, #000000 74%);
+
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.name-wrapper{
+    display: flex;
+    padding: 15px;
+    height: 100%;
+}
+
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    margin-top: 50px;
+}
+
+.right-column{
+    grid-area: right-column;
+    display: grid;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#msg-shadow{
+    background-color: cornsilk;
+    width: 300px;
+    height: 130px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#message{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+    padding: 15px;
+}
+
+.about-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 3em 40em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-me{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.social-links{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.resume-container{
+    height: 100%;
+    width: 100%;
+    background-color: lightsalmon;
+    border: 1px solid gray;
+    
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 40em;
+    grid-template-areas: 
+        'nav-wrapper'
+        'resume-column'
+    ;
+}
+
+.res-link{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    margin-bottom: 50px;
+}
+#contact-form label{
+    line-height: 2.7em;
+}
+#contact-form textarea{
+    min-height: 100px;
+    font-size: 14px;
+}
+
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: moccasin;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: black;
+    border: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 100%;
+    }
+    
+}

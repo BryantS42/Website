@@ -9,11 +9,62 @@ html, body {
 
 .wrapper{
     background-color: midnightblue;
-    max-width: 50%;
     display: flex;
     flex-direction: row;
-    height: 80%;
 }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: blanchedalmond;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 22px;
+    position: relative;
+}
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav a:hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 220ms;
+}
+nav a:hover::before{
+    width: 100%;
+}
+
 
 .first, .second{
     background-color: lightskyblue;
